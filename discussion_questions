@@ -1,0 +1,107 @@
+RUNTIME
+
+1.  What determines the workload of figuring out whether your box of animal crackers contains an elephant?
+
+    Workload here refers to the number of animal crackers in the box. If there are n animal crackers, it could theoretically take n times to do the calculations. It's best think about the worst case scenario, which, in this case, would be that the elephant is the last animal cracker you find in the box. Therefore, the operation would be O(n).
+
+
+2. I've ordered the following runtimes in ascending order by efficiency as n approaches infinity:
+
+    O(1)
+    O(log n)
+    O(n)
+    O(n log n)
+    O(n2)
+    O(2n)
+    O(n!) <-- theoretical infinity
+
+
+STACKS & QUEUES
+
+1. In the following cases, would a stack or queue be a more appropriate data structure?
+
+    -A stack would be a more appropriate data structure for the process of loading and unloading pallets onto a flatbed truck because last pallet stacked on the pallet would be the easiest to first take out.
+
+    -A queue would be a more appropriate data structure for putting bottle caps on bottles of beer as they roll down an assembly line because the first bottle of beer sent down the assembly line should be capped first.
+
+    -A stack would be a more appropriate data structure for calculating the solution to this mathematical expression: 2 + (7 * 4) - (3 / 2) because stacks are useful for getting inside of tiny unviverses, such as those between openers and closers.
+
+
+2. Describe two more situations where a queue would be an appropriate data structure.
+    -A queue would be an appropriate data structure for sending print jobs to a printer. The first print job sent to the printer would print first.
+
+    -A queue would be an appropriate data structure for a restaurant waiting list. The first person to give their name on the waiting list will be the first person to be called when a table is ready.
+
+3. Describe two more situations where a stack would be an appropriate data structure.
+
+    -A stack would be an appropriate data structure for searching a tree in a Depth First Search (DFS).
+
+    -A stack would be an appropriate data structure for the undo (apple + z) mechanism in text editors, etc, because you want to remove the last action that was performed.
+
+LINKED LISTS
+
+1. Given the linked list in the assessment, which are the nodes? What is the data for each node? Where is the head? Where is the tail? (Please be as specific as possible — exactly which parts of the diagram correspond to each part? Arrows? Boxes? Text?)
+
+    In the example linked list, the head is explicitly defined. It is the highest box in the diagram. The head is tracked as the node with the data "Apple." There are a total of three nodes, each represented by a box, which includes two smaller boxes. The first box (on the left of each box) includes data, in this case, the name of fruit, such as Apple, Berry, and Cherry. The second box (on the right) in the node includes information about which node is next in line. The node with the data "Apple" has a next, whose arrow points to the node with the data "Berry". The node with the data "Berry" has a next, whose arrow points to the node with the data "Cherry." In this particular example, the tail is not explicitly defined or tracked; however, the last node in the linked list or the node that points to None is the node with the data "Cherry." 
+
+2. What’s the difference between doubly- and singly-linked lists?
+    Singly-linked lists have nodes that contain data and next. Each next within a node points to the next node in line and in the same direction as the arrows from the other nodes: all one way. Doubly-linked lists, on the other hand, have nodes that contain data, next, as well as previous. Like singly-linked lists, doubly-linked lists also have nodes with next, which points to the next node in line. However, unlike singly-linked lists, doubly-linked lists have nodes with previous, which points to the previous node data.
+
+
+3. Why is it faster to append to a linked list if we keep track of the tail as an attribute?
+    Appending to a linked list is faster if the tail of the linked list is tracked as an attribute because the program would no longer need to start at the head of the linked list and traverse the entire linked list to the end every time a node is being added. Instead, the program could quickly find the tail, and thus the node toward which the tail is pointing and add the new node there.
+
+TREES
+
+1. Given the tree in the assessment, in what order would a Breadth First Search (BFS) algorithm visit each node until finding burrito (starting at food)? Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+
+    food
+    Italian
+    Indian
+    Mexican
+    lasagna
+    pizza
+    tikka masala
+    burrito
+
+
+2. Given the tree in the assessment, in what order would a Depth First Search (DFS) algorithm visit each node until finding Chicago-style (starting at food)? Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+
+    
+
+    food
+    Mexican
+    enchiladas
+    tacos
+    burrito
+    Indian
+    saag
+    tikka masala
+    Italian
+    pizza
+    New York-style
+    Chicago-style
+
+
+3. How is a binary search tree different from other trees?
+
+    A binary search tree has two conditions. First, each node has only two children a left and right child. One of the children may be None. Second, a binary search tree has a rule for arrangement, which is often used for fast searching. For example, if the data you are searching for comes before the data in a node, go to the left. If the data you are searching for comes after the data in a node, go to the right. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
